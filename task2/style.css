@@ -1,0 +1,70 @@
+/* Import Google Fonts - Requirement: Custom font choices */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:italic,wght@0,400;1,700&display=swap');
+
+:root {
+    --primary-color: #2563eb; /* Professional Blue */
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-gray: #f9fafb;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Clean font for reading */
+    color: var(--text-dark);
+    background-color: var(--bg-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Blog Post Styling */
+article {
+    background: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: var(--text-dark);
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design - Requirement: Mobile friendly */
+@media (max-width: 600px) {
+    article {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+#disqus_thread {
+    margin-top: 3rem;
+}

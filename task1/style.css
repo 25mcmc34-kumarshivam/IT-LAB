@@ -1,0 +1,73 @@
+/* Custom Orange Theme */
+:root {
+    --yoga-orange: #e67300;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* 1. Header Styling */
+header {
+    background-color: var(--yoga-orange);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* 2. Navigation using Flexbox */
+nav ul {
+    display: flex; /* Flexbox Requirement */
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: var(--yoga-orange);
+}
+
+/* 3. Main Content & Sidebar using CSS Grid */
+.content-area {
+    display: grid; 
+    grid-template-columns: 3fr 1fr; /* 3 parts main, 1 part side */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Make it stack on top of each other on small screens */
+@media (max-width: 768px) {
+    .content-area {
+        grid-template-columns: 1fr;
+    }
+}
+
+main {
+    background: white;
+    padding: 20px;
+}
+
+aside {
+    background: #f4f4f4;
+    padding: 20px;
+    border-left: 5px solid var(--yoga-orange);
+}
+
+/* 4. Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

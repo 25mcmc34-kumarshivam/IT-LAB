@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shivam's CR Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="todo-container">
+    <h2>MCA 2025 Task List</h2>
+    
+    <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Add a new task...">
+        <input type="date" id="dateInput">
+        <button class="add-btn" onclick="addTask()">ADD</button>
+    </div>
+
+    <div class="filters">
+        <span onclick="renderTasks('all')">All</span>
+        <span onclick="renderTasks('pending')">Pending</span>
+        <span onclick="renderTasks('completed')">Completed</span>
+    </div>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+:root {
+    --uoh-orange: #e67300;
+    --completed: #999;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.todo-container {
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h2 { text-align: center; color: var(--uoh-orange); }
+
+.input-group { display: flex; gap: 5px; margin-bottom: 20px; }
+
+input[type="text"], input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button.add-btn {
+    background: var(--uoh-orange);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.filters span {
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--uoh-orange);
+    font-weight: bold;
+}
+
+ul { list-style: none; padding: 0; }
+
+li {
+    background: #f9f9f9;
+    margin-bottom: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.done { text-decoration: line-through; color: var(--completed); }
+
+.due-date { font-size: 0.75rem; color: #666; }
+
+.delete-btn { color: red; cursor: pointer; border: none; background: none; }
