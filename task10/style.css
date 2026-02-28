@@ -1,0 +1,34 @@
+body {
+    font-family: Arial;
+    padding: 40px;
+     
+}
+
+.tab-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    border-bottom: 2px solid #000000;
+}
+
+.tab-links li {
+    padding: 8px 16px;
+    cursor: pointer;
+    background: #ef2e2e;
+    margin-right: 5px;
+}
+
+.tab-links li:focus {
+    outline: 2px solid #4e73df;
+}
+
+.active {
+    background: #0e2773;
+    color: rgb(8, 70, 203);
+}
+
+.tab-panel {
+    display: none;
+    padding: 15px;
+    border: 1px solid #c50c0c;
+}

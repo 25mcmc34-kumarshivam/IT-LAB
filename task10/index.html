@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kumar Shivam - Tabs</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="myTabs" class="tabs">
+
+    <ul class="tab-links">
+        <li data-tab="home" tabindex="0">Home</li>
+        <li data-tab="about" tabindex="0">About</li>
+        <li data-tab="contact" tabindex="0">Contact</li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="home" class="tab-panel">
+            <h3>Kumar Shivam</h3>
+            <p>MCA student at University of Hyderabad.</p>
+            <p>Strong in Java, Data Structures, DBMS and Operating Systems.</p>
+        </div>
+
+        <div id="about" class="tab-panel">
+            <h3>About Me</h3>
+            <p>Currently pursuing MCA (2025–Present).</p>
+            <p>Developed projects like Hotel Management System (Java, MySQL)</p>
+            <p>University Examination Management System (Oracle DB).</p>
+            <p>Class Representative (CR) in MCA & BCA.</p>
+        </div>
+
+        <div id="contact" class="tab-panel">
+            <h3>Contact</h3>
+            <p>Email: kumarshivam06345@gmail.com</p>
+            <p>GitHub: github.com/25mcmc34-kumarshivam</p>
+            <p>National Level Boxing Player 🥊</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="tabs.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#myTabs").simpleTabs({
+            activeClass: "active",
+            animationSpeed: 200,
+            defaultTab: "home"
+        });
+    });
+</script>
+
+</body>
+</html>
