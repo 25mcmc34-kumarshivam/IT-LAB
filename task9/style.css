@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:focus, select:focus {
+    border-color: #4e73df;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    height: 14px;
+}
+
+button {
+    
+    background: #4e73df;
+    color: white;
+     
+}
+
+ 
